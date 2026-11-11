@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFF Nairutia | Christian Foundation Fellowship</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#fdfbf7;color:#222;line-height:1.6}
+header{background:#1a2e1a;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+header h1{font-size:20px} header h1 span{color:#f2c94c}
+nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
+.hero{background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1200');background-size:cover;background-position:center;color:white;text-align:center;padding:80px 20px}
+.hero h2{font-size:36px;margin-bottom:10px}
+.hero p{font-size:17px;max-width:600px;margin:0 auto 20px}
+.btn{display:inline-block;background:#f2c94c;color:#1a2e1a;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold;margin:5px;border:none;cursor:pointer}
+.btn-outline{background:transparent;color:white;border:2px solid white}
+section{padding:50px 20px;max-width:900px;margin:auto}
+h3{font-size:26px;margin-bottom:15px;color:#1a2e1a;text-align:center}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.08);margin-bottom:20px}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.service{background:#eef5ee;padding:20px;border-radius:12px;text-align:center}
+.service b{font-size:18px}
+label{display:block;margin:12px 0 5px;font-weight:600}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;font-size:15px}
+.project-box{background:#fff3cd;border:2px dashed #f2c94c;padding:20px;border-radius:15px;text-align:center;margin:20px 0}
+.project-box h4{font-size:22px}
+.big-number{font-size:28px;font-weight:bold;color:#1a2e1a;letter-spacing:1px}
+footer{background:#1a2e1a;color:white;text-align:center;padding:30px 20px}
+.success{background:#d4edda;padding:15px;border-radius:10px;display:none;margin-top:15px}
+@media(max-width:600px){.service-grid{grid-template-columns:1fr} .hero h2{font-size:28px} nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>CFF <span>NAIRUTIA</span></h1>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#member">Register</a><a href="#give">Give</a></nav>
+</header>
+
+<div class="hero">
+<h2>Christian Foundation Fellowship</h2>
+<p>Devoted to serve others, meet their heavenly purpose.</p>
+<p><b>Nairutia | Welcome Home</b></p>
+<a href="#member" class="btn">Register As Member</a>
+<a href="#give" class="btn btn-outline">Give To Project</a>
+</div>
+
+<section id="about">
+<h3>About Us</h3>
+<div class="card">
+<p>Welcome to <b>Christian Foundation Fellowship (CFF) Nairutia</b>.</p><br>
+<p>We are devoted to serve others, meet their heavenly purpose.</p><br>
+<p>Whether you are new in Nairutia or have been here for years, this is a family where you will grow in faith, find love, and discover your purpose in Christ.</p><br>
+<p><b>📍 Location:</b> Nairutia<br>
+<b>📞 Contact:</b> 0724869826<br>
+<b>🙏 Come As You Are</b></p>
+</div>
+</section>
+
+<section id="services">
+<h3>Our Services</h3>
+<div class="service-grid">
+<div class="service"><b>🙌 Sunday Service</b><br>Sundays | 9:00 AM - 12:30 PM<br>Main Worship & Word</div>
+<div class="service"><b>📖 Bible Study</b><br>Wednesday | 5:00 PM<br>Deep in the Word</div>
+<div class="service"><b>🔥 Prayer Meeting</b><br>Friday | 5:00 PM<br>Intercession & Worship</div>
+<div class="service"><b>🎉 Youth & Choir</b><br>Saturday | 3:00 PM<br>Young Generation</div>
+</div>
+</section>
+
+<section id="member">
+<h3>Member Registration</h3>
+<p style="text-align:center;margin-bottom:15px">Karibu CFF Nairutia. Fill this form to be registered as a member.</p>
+<div class="card">
+<form id="memberForm">
+<label>Full Name *</label>
+<input type="text" id="mName" placeholder="e.g. John Kamau" required>
+<label>Phone Number *</label>
+<input type="tel" id="mPhone" placeholder="07XX XXX XXX" required>
+<label>Where Do You Come From? *</label>
+<input type="text" id="mFrom" placeholder="e.g. Nairutia, Karatina, Nyeri" required>
+<label>Your Position In The Church *</label>
+<select id="mPosition" required>
+<option value="">-- Select Position --</option>
+<option>Pastor</option><option>Elder</option><option>Deacon / Deaconess</option>
+<option>Choir Member</option><option>Usher</option><option>Youth Leader</option>
+<option>Sunday School Teacher</option><option>Media / Sound Team</option>
+<option>Intercessor / Prayer Team</option><option>Member</option><option>Visitor / New Believer</option>
+</select>
+<label>Anything you want us to know? (Optional)</label>
+<textarea id="mNote" rows="3" placeholder="Prayer request, talent, etc."></textarea>
+<br><br>
+<button type="submit" class="btn" style="width:100%">Register Me As Member</button>
+<div id="memberSuccess" class="success">✅ Asante! You have been registered. We will contact you soon. Karibu CFF Nairutia!</div>
+</form>
+</div>
+</section>
+
+<section id="give">
+<h3>Contribute To Ongoing Project</h3>
+<div class="project-box">
+<h4>🏗️ ONGOING PROJECT</h4>
+<p style="font-size:20px;font-weight:bold;margin:10px 0">WIDENING THE CHURCH WALLS</p>
+<p>We are expanding our church to accommodate more souls. Every contribution brings us closer.</p>
+<br>
+<p>Send Money To Project Number:</p>
+<div class="big-number">0724 869 826</div>
+<p style="font-size:13px;margin-top:5px">M-PESA - Send Money | Name: CFF Nairutia Project</p>
+</div>
+
+<div class="card">
+<h4 style="text-align:center">After Sending, Confirm Your Contribution</h4>
+<form id="giveForm">
+<label>Your Full Name *</label>
+<input type="text" id="gName" placeholder="Your Name" required>
+<label>Phone Used To Send *</label>
+<input type="tel" id="gPhone" placeholder="07XX XXX XXX" required>
+<label>Amount Contributed (Ksh) *</label>
+<input type="number" id="gAmount" placeholder="e.g. 500" required>
+<label>M-PESA Code (e.g. QK123...)</label>
+<input type="text" id="gCode" placeholder="M-Pesa Transaction Code">
+<label>Project</label>
+<input type="text" value="Widening The Church Walls" readonly>
+<br><br>
+<button type="submit" class="btn" style="width:100%">I Have Contributed</button>
+<div id="giveSuccess" class="success">🙏 God Bless You! Your contribution to Widening The Church Walls has been recorded. Thank you for building His house.</div>
+</form>
+</div>
+</section>
+
+<footer>
+<h3 style="color:white">CFF NAIRUTIA</h3>
+<p>Christian Foundation Fellowship</p>
+<p>Devoted to serve others, meet their heavenly purpose.</p><br>
+<p>Project Number: 0724869826</p>
+<p>© 2026 CFF Nairutia. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById('memberForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name=document.getElementById('mName').value;
+ const phone=document.getElementById('mPhone').value;
+ const from=document.getElementById('mFrom').value;
+ const pos=document.getElementById('mPosition').value;
+ const msg = `Hello CFF Nairutia, I want to register as a member.%0A%0AName: ${name}%0APhone: ${phone}%0AFrom: ${from}%0APosition: ${pos}`;
+ window.open(`https://wa.me/254724869826?text=${msg}`, '_blank');
+ document.getElementById('memberSuccess').style.display='block';
+});
+document.getElementById('giveForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name=document.getElementById('gName').value;
+ const amount=document.getElementById('gAmount').value;
+ const code=document.getElementById('gCode').value;
+ const msg = `Hello CFF Nairutia, I have contributed to Widening The Church Walls.%0A%0AName: ${name}%0AAmount: Ksh ${amount}%0AM-Pesa Code: ${code}`;
+ window.open(`https://wa.me/254724869826?text=${msg}`, '_blank');
+ document.getElementById('giveSuccess').style.display='block';
+});
+</script>
+</body>
+</html>
